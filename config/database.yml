@@ -5,6 +5,8 @@ default: &defaults
 development:
   <<: *defaults
   database: unfuck-dev
+  username: postgres
+  password: abcdef
 
 test:
   <<: *defaults
