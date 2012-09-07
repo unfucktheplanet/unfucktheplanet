@@ -2,11 +2,16 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 
-gem 'jquery-rails'
+gem 'pg', '0.14.1'
 
-gem 'pg', '0.14.0'
+gem 'devise',            '~> 2.1.2'
+gem 'omniauth',          '~> 1.1.1'
+gem 'omniauth-facebook', '~> 1.4.1'
+
 gem 'koala'
 gem 'geocoder'
+
+gem 'jquery-rails'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -14,19 +19,18 @@ group :assets do
   gem 'uglifier',     '>= 1.0.3'
 end
 
-group :development do
+group :development, :test, :cucumber do
   gem 'debugger'
   gem 'pry'
-end
-
-group :test do
   gem 'rspec-rails'
+  gem 'cucumber-rails'
+  gem 'capybara'
+  gem 'capybara-firebug'
 end
 
-group :cucumber do
-  gem 'capybara'
-  gem 'cucumber-rails'
-  gem 'capybara-firebug'
+group :test, :cucumber do
+  gem 'database_cleaner'
+  gem 'email_spec'
 end
 
 group :heroku do
