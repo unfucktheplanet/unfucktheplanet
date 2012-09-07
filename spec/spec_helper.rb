@@ -37,6 +37,9 @@ RSpec.configure do |config|
   #     --seed 1234
   config.order = "random"
 
+  # Controller macros for handling authentication:
+  config.include Devise::TestHelpers, type: :controller
+
   # Configure "DatabaseCleaner" to run tests in isolation:
   DatabaseCleaner.strategy = :transaction
 
