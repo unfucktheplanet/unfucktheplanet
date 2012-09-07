@@ -1,4 +1,9 @@
 class FuckController < ApplicationController
+
+  def new
+    @fuck = Fuck.new
+  end
+
   def create
   end
 
@@ -13,4 +18,5 @@ class FuckController < ApplicationController
 
   def destroy
   end
+
 end
