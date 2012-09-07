@@ -22,15 +22,15 @@ group :assets do
 end
 
 group :development, :test do
+  gem 'rspec-rails'
   gem 'debugger'
   gem 'pry'
-  gem 'rspec-rails'
-  gem 'capybara'
-  gem 'capybara-firebug'
 end
 
 group :test do
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', require: false
+  gem 'capybara'
+  gem 'capybara-firebug'
   gem 'database_cleaner'
   gem 'email_spec'
 end
