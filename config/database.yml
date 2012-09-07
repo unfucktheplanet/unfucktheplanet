@@ -12,6 +12,10 @@ test:
   <<: *defaults
   database: unfuck-test
 
+cucumber:
+  <<: *defaults
+  database: unfuck-test
+
 production:
   <<: *defaults
   database: unfuck-prod
