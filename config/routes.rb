@@ -1,4 +1,62 @@
 Unfucktheplanet::Application.routes.draw do
+
+  get "resources/create"
+
+  get "resources/show"
+
+  get "resources/update"
+
+  get "resources/index"
+
+  get "resources/destroy"
+
+  get "unfuck/create"
+
+  get "unfuck/show"
+
+  get "unfuck/update"
+
+  get "unfuck/index"
+
+  get "unfuck/destroy"
+
+  get "fuck/create"
+
+  get "fuck/show"
+
+  get "fuck/update"
+
+  get "fuck/index"
+
+  get "fuck/destroy"
+
+  get "location/create"
+
+  get "location/show"
+
+  get "location/update"
+
+  get "location/index"
+
+  get "location/destroy"
+
+  get "users/create"
+
+  get "users/show"
+
+  get "users/update"
+
+  get "users/index"
+
+  get "users/destroy"
+
+  resources :users
+  resources :locations
+  resources :fucks 
+  resources :unfucks 
+  resources :resources
+  resources :notifications
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

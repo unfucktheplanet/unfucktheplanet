@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120907222332) do
+ActiveRecord::Schema.define(:version => 20120907223748) do
 
   create_table "fucks", :force => true do |t|
     t.string   "description"
@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(:version => 20120907222332) do
     t.integer  "location_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.integer  "unfuck_id"
   end
 
   create_table "unfucks", :force => true do |t|
@@ -67,6 +68,13 @@ ActiveRecord::Schema.define(:version => 20120907222332) do
     t.string   "email"
     t.string   "fb_token"
     t.string   "fb_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "watchers", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "fuck_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
