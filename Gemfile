@@ -2,11 +2,12 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 
+gem 'pg', '0.14.1'
+
 gem 'devise',            '~> 2.1.2'
 gem 'omniauth',          '~> 1.1.1'
 gem 'omniauth-facebook', '~> 1.4.1'
 
-gem 'pg', '0.14.0'
 gem 'koala'
 gem 'geocoder'
 
@@ -23,7 +24,13 @@ group :development, :test, :cucumber do
   gem 'pry'
   gem 'rspec-rails'
   gem 'cucumber-rails'
+  gem 'capybara'
   gem 'capybara-firebug'
+end
+
+group :test, :cucumber do
+  gem 'database_cleaner'
+  gem 'email_spec'
 end
 
 group :heroku do
