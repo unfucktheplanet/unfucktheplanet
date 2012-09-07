@@ -11,7 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120907215222) do
+ActiveRecord::Schema.define(:version => 20120907222332) do
+
+  create_table "fucks", :force => true do |t|
+    t.string   "description"
+    t.integer  "user_id"
+    t.string   "locaiton_id"
+    t.string   "image"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "locations", :force => true do |t|
     t.string   "name"
@@ -19,6 +28,36 @@ ActiveRecord::Schema.define(:version => 20120907215222) do
     t.string   "lon"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "notifications", :force => true do |t|
+    t.string   "message"
+    t.integer  "user_id"
+    t.integer  "fuck_id"
+    t.integer  "unfuck_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "resources", :force => true do |t|
+    t.string   "description"
+    t.string   "unit"
+    t.integer  "quantity"
+    t.date     "avail_from"
+    t.date     "avail_to"
+    t.integer  "location_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "unfucks", :force => true do |t|
+    t.string   "description"
+    t.integer  "fuck_id"
+    t.integer  "user_id"
+    t.integer  "location_id"
+    t.string   "execution"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "users", :force => true do |t|

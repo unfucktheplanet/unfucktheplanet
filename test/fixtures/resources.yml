@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  description: MyString
+  unit: MyString
+  quantity: 1
+  avail_from: 2012-09-08
+  avail_to: 2012-09-08
+  location_id: 1
+
+two:
+  description: MyString
+  unit: MyString
+  quantity: 1
+  avail_from: 2012-09-08
+  avail_to: 2012-09-08
+  location_id: 1
