@@ -2,7 +2,7 @@ default: &defaults
   adapter: postgresql
   host: localhost
   username: postgres
-  password: 1234
+  password:
 
 development:
   <<: *defaults
