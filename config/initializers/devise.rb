@@ -208,8 +208,8 @@ Devise.setup do |config|
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', :scope => 'user,public_repo'
 
   fb     = YAML.load_file("#{Rails.root}/config/omniauth.yml")[Rails.env]
-  appid  = fb['appid']
-  secret = fb['secret']
+  appid  = ENV['FB_APPID'] || fb['appid']
+  secret = ENV['FB_SECRET'] || fb['secret']
 
   config.omniauth :facebook, appid, secret, scope: 'email', display: 'popup'
 
