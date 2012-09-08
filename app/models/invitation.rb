@@ -4,7 +4,7 @@ class Invitation < ActiveRecord::Base
 
   private 
 
-  	def create_random_value
+    def create_random_value
       chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
       value = ""
       10.times { value << chars[rand(chars.size)] }

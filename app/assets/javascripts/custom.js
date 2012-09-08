@@ -1,4 +1,4 @@
 
 function startTheFuck(){
-	alert("Fuck you!");
+  alert("Fuck you!");
 }
