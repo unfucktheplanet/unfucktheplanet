@@ -16,4 +16,5 @@ cucumber:
   <<: *test
 
 production:
-  <<: *defaults
+  appid: <%= ENV['FB_APPID'] || "492651730746756" %>
+  secred: <%= ENV['FB_SECRET'] || "789e7719ff2478bf2ce48c107c7d7da0" %>
