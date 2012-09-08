@@ -7,6 +7,7 @@ gem 'pg', '0.14.1'
 gem 'devise',            '~> 2.1.2'
 gem 'omniauth',          '~> 1.1.1'
 gem 'omniauth-facebook', '~> 1.4.1'
+gem 'cancan'
 
 gem 'koala'
 gem 'geocoder'
