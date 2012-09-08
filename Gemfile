@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
+gem 'jquery-rails'
+gem 'rails-i18n'
 
 gem 'pg', '0.14.1'
 
@@ -12,9 +14,7 @@ gem 'cancan'
 gem 'koala'
 gem 'geocoder'
 
-gem 'jquery-rails'
-
-gem 'rails-i18n'
+gem 'unicorn',        '4.3.1'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
