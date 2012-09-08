@@ -1,0 +1,6 @@
+* JSON API (CRUD for each model)
+* CanCan ability (who can do what?/authorization)
+* Authentication for C(R)UD actions
+* Handle media uploads (paperclip?)
+* Add backbone, underscore, mustache, jquery…
+* 
