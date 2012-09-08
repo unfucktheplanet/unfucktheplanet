@@ -1,16 +1,21 @@
-defaults: &defaults
-  adapter: postgres
-  user: postgres
-  password: 
-  
+default: &defaults
+  adapter: postgresql
+  host: localhost
+  username: postgres
+  password: a
+
 development:
-  <* defaults
+  <<: *defaults
   database: unfuck-dev
-  
+
 test:
-  <* defaults
+  <<: *defaults
+  database: unfuck-test
+
+cucumber:
+  <<: *defaults
   database: unfuck-test
 
 production:
-  <* defaults
-  database: unfuck
+  <<: *defaults
+  database: unfuck-prod
