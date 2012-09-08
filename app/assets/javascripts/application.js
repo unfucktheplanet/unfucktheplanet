@@ -27,4 +27,3 @@
 //= require_tree ./collections
 //
 //= require ./init
-//= require ./custom.js

@@ -9,6 +9,7 @@
 </head>
 <body>
   <%= yield %>
+  <%= include_javascripts :templates %>
   <%= javascript_include_tag "application" %>
 </body>
 </html>

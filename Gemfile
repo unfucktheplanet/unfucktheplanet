@@ -16,6 +16,7 @@ gem 'inherited_resources'
 
 gem 'postmark-rails', '0.4.1'
 
+gem 'jammit'
 gem 'jquery-rails'
 
 gem 'rails-i18n'
