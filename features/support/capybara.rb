@@ -3,6 +3,8 @@
 # Use Chrome as the default browser for testing.
 # Capybara.javascript_driver = :chrome
 
+Capybara.javascript_driver = :poltergeist
+
 # Capybara defaults to XPath selectors rather than Webrat's default of CSS3.
 # If you prefer to use XPath just remove this line and adjust any selectors
 # in your steps to use the XPath syntax.
