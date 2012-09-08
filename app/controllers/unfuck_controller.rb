@@ -1,16 +1,2 @@
-class UnfuckController < ApplicationController
-  def create
-  end
-
-  def show
-  end
-
-  def update
-  end
-
-  def index
-  end
-
-  def destroy
-  end
+class UnfuckController < ApiController
 end
