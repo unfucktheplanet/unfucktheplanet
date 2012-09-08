@@ -33,7 +33,8 @@ end
 group :test do
   gem 'cucumber-rails', require: false
   gem 'capybara'
-  gem 'capybara-firebug'
+  gem 'poltergeist'
+  # gem 'capybara-firebug'
   gem 'database_cleaner'
   gem 'email_spec'
 end
