@@ -16,3 +16,14 @@
 //
 //= require lib/underscore
 //= require lib/backbone
+//= require lib/moment
+//
+//= require ./namespace
+//
+//= require_tree ./models
+//= require_tree ./helpers
+//= require_tree ./views
+//= require_tree ./routers
+//= require_tree ./collections
+//
+//= require ./init

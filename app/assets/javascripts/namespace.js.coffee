@@ -1,0 +1,1 @@
+window.UFTP || (window.UFTP = {})
