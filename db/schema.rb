@@ -73,11 +73,20 @@ ActiveRecord::Schema.define(:version => 20120908012005) do
     t.string   "lastname"
     t.boolean  "gender"
     t.string   "email"
-    t.string   "fb_token"
-    t.string   "fb_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string   "auth_provider"
+    t.string   "auth_token"
+    t.string   "auth_uid"
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",       :default => 0
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
   end
+
+  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
 
   create_table "watchers", :force => true do |t|
     t.integer  "user_id"

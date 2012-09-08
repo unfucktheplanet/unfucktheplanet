@@ -5,13 +5,23 @@ class OmniauthController < Devise::OmniauthCallbacksController
   skip_authorization_check
 
   def facebook
-    render json: info
+    @user = User.where(auth_provider: 'facebook', auth_uid: auth.uid).first
+
+    if @user.nil?
+      @user = User.new
+      @user.auth_provider = 'facebook'
+      @user.auth_uid      = auth.uid
+      @user.auth_token    = auth.credentials.token
+      @user.save!
+    end
+
+    sign_in @user
   end
 
   private
 
-  def info
-    @info ||= request.env["omniauth.auth"]
+  def auth
+    @auth ||= request.env["omniauth.auth"]
   end
 
 end
