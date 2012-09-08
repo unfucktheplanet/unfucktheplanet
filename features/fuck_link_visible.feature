@@ -3,5 +3,5 @@ Feature: A fuck link visible on main page
   As a new user
   I want to see a link to a description of a fuck
   Scenario: See link
-    Given I am on the Homepage
+    Given I am on the main page
     Then I should see a link to a fuck.
