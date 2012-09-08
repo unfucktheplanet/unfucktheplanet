@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
-gem 'jquery-rails'
-gem 'rails-i18n'
 
 gem 'pg', '0.14.1'
 
@@ -16,7 +14,9 @@ gem 'geocoder'
 
 gem 'postmark-rails', '0.4.1'
 
-gem 'unicorn',        '4.3.1'
+gem 'jquery-rails'
+
+gem 'rails-i18n'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -33,11 +33,12 @@ end
 group :test do
   gem 'cucumber-rails', require: false
   gem 'capybara'
-  gem 'poltergeist'
-  # gem 'capybara-firebug'
+  gem 'capybara-firebug'
   gem 'database_cleaner'
   gem 'email_spec'
 end
 
 group :heroku do
 end
+
+gem 'unicorn'
