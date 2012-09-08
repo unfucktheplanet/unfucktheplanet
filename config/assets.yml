@@ -1,0 +1,11 @@
+embed_assets: off
+
+template_extension: hbs
+
+template_function: Handlebars.template
+
+template_namespace: SHT
+
+javascripts:
+  templates:
+    - app/assets/javascripts/templates/**/*.hbs
