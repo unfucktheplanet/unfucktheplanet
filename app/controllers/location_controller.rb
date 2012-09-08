@@ -1,2 +1,0 @@
-class LocationController < ApiController
-end
