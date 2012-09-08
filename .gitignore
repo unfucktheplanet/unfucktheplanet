@@ -1,3 +1,7 @@
+# Ignore temporary and log files.
 /tmp
 *.log
+
+# Ignore configuration secrets.
 /config/database.yml
+/config/omniauth.yml

@@ -1,3 +1,4 @@
 class User < ActiveRecord::Base
-  attr_accessible :email, :firstname, :gender, :lastname
+  devise :omniauthable, :registerable, :rememberable, :trackable
+  attr_accessible :email, :firstname, :lastname, :gender, :remember_me
 end
