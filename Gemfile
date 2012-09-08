@@ -12,6 +12,8 @@ gem 'cancan'
 gem 'koala'
 gem 'geocoder'
 
+gem 'inherited_resources'
+
 gem 'postmark-rails', '0.4.1'
 
 gem 'jquery-rails'
