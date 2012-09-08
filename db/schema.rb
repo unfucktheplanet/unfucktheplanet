@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120908012005) do
+ActiveRecord::Schema.define(:version => 20120908042331) do
 
   create_table "fucks", :force => true do |t|
     t.string   "description"
@@ -73,9 +73,8 @@ ActiveRecord::Schema.define(:version => 20120908012005) do
     t.string   "lastname"
     t.boolean  "gender"
     t.string   "email"
-    t.string   "auth_provider"
-    t.string   "auth_token"
-    t.string   "auth_uid"
+    t.string   "fb_token"
+    t.string   "fb_id"
     t.datetime "created_at",                         :null => false
     t.datetime "updated_at",                         :null => false
     t.datetime "remember_created_at"
@@ -84,6 +83,7 @@ ActiveRecord::Schema.define(:version => 20120908012005) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.boolean  "admin"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
