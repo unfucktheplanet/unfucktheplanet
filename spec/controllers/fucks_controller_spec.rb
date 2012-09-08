@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe UnfuckController do
+describe FucksController do
 
   describe "POST 'create'" do
     it "returns http success" do

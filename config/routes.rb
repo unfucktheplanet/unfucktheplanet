@@ -4,11 +4,11 @@ Unfucktheplanet::Application.routes.draw do
 
   devise_for :users, controllers: { omniauth_callbacks: "omniauth" }
 
-  resources :user
-  resources :location
-  resources :fuck
-  resources :unfuck
-  resources :resource
-  resources :notification
+  resources :users
+  resources :locations
+  resources :fucks
+  resources :unfucks
+  resources :resources
+  resources :notifications
 
 end

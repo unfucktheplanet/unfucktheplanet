@@ -1,0 +1,10 @@
+x * JSON API (CRUD for each model)
+* CanCan ability (who can do what?/authorization)
+* Authentication for C(R)UD actions
+* Model validations
+* Relationships
+* Handle media uploads (paperclip?)
+x? * Add backbone, underscore, mustache, jquery…
+* fill in templates
+* getting Cucumber & poltergeist & phantomjs to work
+  |_-> write features 
