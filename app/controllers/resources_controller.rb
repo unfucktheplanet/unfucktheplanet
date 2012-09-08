@@ -1,2 +1,0 @@
-class ResourcesController < ApiController
-end
