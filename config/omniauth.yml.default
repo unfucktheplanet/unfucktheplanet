@@ -1,0 +1,18 @@
+# Facebook app information can be found at
+# https://developers.facebook.com/apps
+
+default: &defaults
+  appid: ""
+  secret: ""
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+cucumber:
+  <<: *defaults
+
+production:
+  <<: *defaults
