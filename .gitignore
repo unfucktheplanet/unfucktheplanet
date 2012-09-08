@@ -4,4 +4,3 @@
 
 # Ignore configuration secrets.
 /config/database.yml
-/config/omniauth.yml
