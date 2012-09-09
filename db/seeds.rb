@@ -19,7 +19,7 @@ users = User.create([{
 }])
 
 fucks = Fuck.create([{
-  description: 'The Playground Cnr Kollwitz & Wörther Straße is dirty'},{
+  title:'dirty playground', description: 'The Playground Cnr Kollwitz & Wörther Straße is dirty'},{
   description: 'The Playground Cnr Kollwitz & Wörther Straße is dirty'},{
   description: 'The Playground Cnr Kollwitz & Wörther Straße is dirty'}])
 
