@@ -1,11 +1,11 @@
 embed_assets: off
 
-template_function: Mustache.template
+template_extension: hbs
 
-template_extension: html.mustache
+template_function: Handlebars.template
+
+template_namespace: SHT
 
 javascripts:
-  workspace:
-    - app/assets/javascripts/jammit-mustache.js
   templates:
-    - app/assets/javascripts/templates/**/*.mustache
+    - app/assets/javascripts/templates/**/*.hbs

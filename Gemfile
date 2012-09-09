@@ -19,8 +19,6 @@ gem 'postmark-rails', '0.4.1'
 gem 'jammit'
 gem 'jquery-rails'
 
-gem 'mustache'
-
 gem 'rails-i18n'
 
 group :assets do
