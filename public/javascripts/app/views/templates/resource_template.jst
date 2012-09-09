@@ -1,8 +1,27 @@
 <div id="resource_{{id}}"class="row-fluid">
   <div class="span9">
       <blockquote>
-        <p><span class="resource_amount badge badge-info">{{amount}}</span> x <span class="resource_item">{{description}}</span><span class="pledger label {{#if has_pledger}}label-success{{/if}}">{{#if has_pledger}} {{pledger}} {{#if required}} has your back{{else}} wants to help too!{{/if}}</span>{{/if}} </p>
-        {{#if required}}<small>Needed from <span>{{from}}</span> until <span>{{to}}</span></small>{{/if}}  
+        <p>
+          <span class="resource_amount badge badge-info">{{amount}}</span> x <span class="resource_item">{{description}}</span>
+          <span class="pledger label {{#if has_pledger}}label-success{{/if}}">
+            {{#if has_pledger}} 
+              {{pledger}} 
+              {{#if required}} 
+                has your back
+              {{else}} 
+                wants to help too!
+              {{/if}}
+              </span>
+            {{/if}} 
+          </p>
+        
+        {{#if required}}
+          <small>Needed from 
+            <span>{{from}}</span> until 
+            <span>{{to}}</span>
+          </small>
+        {{/if}}  
+
       <blockquote> 
   </div>
   <div class="span2 offset1">
