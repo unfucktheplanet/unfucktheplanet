@@ -1,13 +1,19 @@
-<div class="row-fluid" id="fuck-holder">
-	<div id="fuck-{{id}}" class="row-fluid fuck-cell">
-	    <div id="fuck-{{id}}-title" class="span9">
-	        <div class="unfuck_badge"></div><a href="{{fuck_url}}">{{title}}</a><br />
-	        <span class="label {{#if approved}}label-success{{/if}}">
-	        	{{unfuck_amount}} unfucks offered {{#if approved}}, 1 accepted{{/if}}
-	        </span>
-	    </div>
-	    <div id="fuck-{{id}}-go" class="span3 fuck-action">
-	      <a href="{{create_unfuck_url}}" class="btn">Unfuck it</a>
-	    </div>
-	</div>
+<div class="row-fluid">
+  <div class="span12">
+    <div class="row-fluid">
+      {{#each featured_fucks}}
+        <div class="featured-fuck thumbnail span4">
+          <img src="{{this.image_url}}" alt="">
+          <div class="caption">
+            <h3>{{this.title}}</h3>
+            <p>{{this.description_short}}</p>
+            <div class="btn-group fuck-controls">
+              <a href="{{this.url}}" class="btn">Read More</a>
+              <a href="{{this.unfuck_url}}" class="btn btn-primary">Unfuck it</a>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
 </div>

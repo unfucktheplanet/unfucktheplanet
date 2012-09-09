@@ -1,0 +1,81 @@
+<div id="unfuck_{{id}}" class="unfuck-content well">
+    <div class="row-fluid unfucker"> 
+      <div class="span10">
+        <img src="{{creator_profile_image_url}}" alt=""> 
+        <strong><a href="{{creator_profile_url}}">{{creator_name}}</a> needs your help!</strong> 
+      </div>    
+    </div>
+    <br />
+    <div class="row-fluid">
+      <p>{{description}}</p>
+    </div>    
+    <div class="row-fluid">
+      <h5>Resources needed:</h5>
+    </div>
+    {{#each unmet_required_resource}}
+      <div id="resource_{{resource_id}}"class="row-fluid">
+        <div class="span9">
+            <blockquote>
+              <p><span class="resource_amount badge badge-info">{{amount}}</span> x <span class="resource_item">{{name}}</span></p>
+              <small>Needed from <span>{{neededfrom}}</span> until <span>neededto</span></small>  
+            <blockquote> 
+        </div>
+        <div class="span2 offset1">
+          <button class="btn"><i class="icon-ok"></i> Pledge</button>
+        </div>
+      </div>
+    {{/each}}
+    {{#each met_required_resource}}
+      <div id="resource_{{resource_id}}"class="row-fluid">
+        <div class="span9">
+            <blockquote>
+              <p><span class="resource_amount badge badge-info">{{amount}}</span> x <span class="resource_item">{{name}}</span><span class="pledger label label-success">{{pledger_name}} has your back</span></p>
+              <small>Needed from <span>{{neededfrom}}</span> until <span>neededto</span></small>  
+            <blockquote> 
+        </div>
+        <div class="span2 offset1">
+          <button class="btn disabled"><i class="icon-ok"></i> Pledge</button>
+        </div>
+      </div>
+    {{/each}}
+    {{#each met_extra_resource}}
+      <div id="resource_{{resource_id}}"class="row-fluid">
+        <div class="span9">
+            <blockquote>
+              <p><span class="resource_amount badge badge-info">{{amount}}</span> x <span class="resource_item">{{name}}</span><span class="pledger label label-success">{{pledger_name}} wants to help</span></p>  
+            <blockquote> 
+        </div>
+      </div>
+    {{/each}}
+    <form class="form-inline">
+      <div class="row-fluid">
+        <div class="row-fluid">
+          <h4>I can also help with:</h4>
+        </div>
+        <div class="row-fluid">
+          <div class="amount-wrapper span2">
+            <input type="text" class="input-small" placeholder="Amount"> 
+          </div>
+          <div class="separator span1 "> of </div>
+          <div class="span6 description-wrapper">
+            <input type="text" class="input-small" placeholder="Thing">
+          </div>
+          <div class="span2 offset1 btn-group">
+            <button id="save-form" class="btn">Clear</button>
+            <button id="save-form" class="btn btn-primary"><i class="icon-plus icon-white"></i> Add</button>
+          </div>
+        </div>
+        <br />
+      </div>
+  </form>
+  <div class="row-fluid">
+    <div class="offset3 btn-group">
+      {{#if involved}}
+        <button type="button" class="span4 btn btn-primary" data-toggle="modal" data-target="#message-modal"><i class="icon-envelope icon-white"></i> Message Creator</button> 
+      {{/if}}
+      {{#if creator}}
+        <button type="submit" class="span4 btn btn-primary" type="button" data-toggle="button"><i class="icon-star icon-white"></i> This will work</button> 
+      {{/if}}
+    </div>      
+  </div>      
+</div>

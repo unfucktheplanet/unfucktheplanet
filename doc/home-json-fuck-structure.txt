@@ -1,0 +1,34 @@
+{ 
+featured_fucks: /* Fucks that are featured, should contain no more than 3 fucks */ 
+	[ {
+		id: 1 /* ID if this fuck*/
+		image_url: "http://placekitten.com/300/200", /* URL of the image attached to this fuck*/
+		title: "We need help!", /* Title of the fuck*/
+		description_short: "We are from a small village in Germany, and our school is about to close because we don't have enough kids! We need people in our village...", /* Trimmed version of the full description (to show on the feature description, shouldn't be too large) */ 
+		url: "fuck/1", /* URL of the fuck*/
+		unfuck_url: "fuck/1/unfuck", /* Direct URL to the unfuck creation page for this fuck*/
+		approved: false,  /* Has the owner of the fuck picked an unfuck?*/
+		unfuck_count: 10 /* How many unfucks are currently attached to this fuck*/
+	} ,{
+		id: ,
+		image_url: ,
+		title: , 
+		description_short: , 
+		url: , 
+		unfuck: ,
+		approved: ,
+		unfuck_count:
+	} , {
+		/* ... */
+	}
+	]
+other_fucks: /* Fucks that appear on the fuck list, below the featured fucks */
+	[
+		{
+			/* Same structure as above*/
+		},
+		{
+
+		}
+	]
+}; 
