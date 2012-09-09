@@ -1,2 +1,0 @@
-class UnfucksController < ApiController
-end
