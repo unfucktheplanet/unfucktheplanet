@@ -29,22 +29,14 @@ $(function(){
     initialize: function() {
       this.input    = this.$("#new-todo");
 
-      Todos.bind('add',   this.addOne, this);
-      Todos.bind('reset', this.addAll, this);
-      Todos.bind('all',   this.render, this);
+      // bind here: Fucks.bind('add',   this.addOne, this);
 
-      Todos.fetch();
+      Fucks.fetch();
     },
 
     // Re-rendering the App just means refreshing the statistics -- the rest
     // of the app doesn't change.
     render: function() {
-
-      this.$('#todo-stats').html(JST.stats_template({
-        total:      Todos.length,
-        done:       Todos.done().length,
-        remaining:  Todos.remaining().length
-      }));
     },
 
     // Add a single todo item to the list by creating a view for it, and
@@ -97,7 +89,7 @@ $(function(){
   });
 
   // Create our global collection of **Todos**.
-  window.Todos = new window.TodoList;
+  window.Fucks = new Unfucktheplanet.Collections.FucksCollection;
   // Finally, we kick things off by creating the **App**.
   window.App = new window.AppView;
 

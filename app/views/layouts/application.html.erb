@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>unfucktheplanet</title>
-  <%= stylesheet_link_tag "application", media: "all" %>
-  <%= render "layouts/templates" %>
-</head>
+  <title>Backbone</title>
+  <%= include_stylesheets :application, :media => 'all' %>
+  <%= include_javascripts :core, :initializers, :helpers, :templates, :application %>
+  <%= csrf_meta_tag %>
+  </head>
 <body>
-  <%= yield %>
-  <%= include_javascripts :templates %>
-  <%= javascript_include_tag "application" %>
+<%= yield %>
 </body>
 </html>
