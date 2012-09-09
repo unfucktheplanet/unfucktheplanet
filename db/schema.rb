@@ -10,14 +10,90 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110801190229) do
+ActiveRecord::Schema.define(:version => 20120909214921) do
 
-  create_table "todos", :force => true do |t|
-    t.string   "content",                       :null => false
-    t.integer  "order"
-    t.boolean  "done",       :default => false, :null => false
-    t.datetime "created_at"
-    t.datetime "updated_at"
+  create_table "fucks", :force => true do |t|
+    t.string   "description"
+    t.integer  "user_id"
+    t.string   "locaiton_id"
+    t.string   "image"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.string   "title"
+  end
+
+  create_table "invitations", :force => true do |t|
+    t.string   "invite_token"
+    t.string   "email"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  create_table "locations", :force => true do |t|
+    t.string   "name"
+    t.string   "lat"
+    t.string   "lon"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "notifications", :force => true do |t|
+    t.string   "message"
+    t.integer  "user_id"
+    t.integer  "fuck_id"
+    t.integer  "unfuck_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "resources", :force => true do |t|
+    t.string   "description"
+    t.string   "unit"
+    t.integer  "quantity"
+    t.date     "avail_from"
+    t.date     "avail_to"
+    t.integer  "location_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.integer  "unfuck_id"
+  end
+
+  create_table "unfucks", :force => true do |t|
+    t.string   "description"
+    t.integer  "fuck_id"
+    t.integer  "user_id"
+    t.integer  "location_id"
+    t.string   "execution"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "firstname"
+    t.string   "lastname"
+    t.boolean  "gender"
+    t.string   "email"
+    t.string   "auth_provider"
+    t.string   "auth_token"
+    t.string   "auth_uid"
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",       :default => 0
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.boolean  "admin"
+  end
+
+  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
+
+  create_table "watchers", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "fuck_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
