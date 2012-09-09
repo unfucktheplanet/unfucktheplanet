@@ -1,0 +1,19 @@
+<div id="header" class="row-fluid">
+	<div id="logo_box" class="span5">
+		<div class="logo_img"></div>
+	</div>
+	<div id="prompt_box" class="span5">
+		<a id="create_fuck" href="fuck/new" class="btn btn-large btn-primary"><span id="user-name"></span>, Help us Unfuck the Planet</a>
+	</div>
+</div>
+
+	<br />
+<div id="body-wrap">
+	<!-- Featured Fucks -->
+	<br />
+	<!-- Other Fucks -->    
+<<<<<<< HEAD
+</div>
+=======
+</div>
+>>>>>>> dd7a41f5c51665c4e3bb2529cd73e15125f5950e
