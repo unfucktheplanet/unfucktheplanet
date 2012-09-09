@@ -12,41 +12,9 @@
     <div class="row-fluid">
       <h5>Resources needed:</h5>
     </div>
-    {{#each unmet_required_resource}}
-      <div id="resource_{{resource_id}}"class="row-fluid">
-        <div class="span9">
-            <blockquote>
-              <p><span class="resource_amount badge badge-info">{{amount}}</span> x <span class="resource_item">{{name}}</span></p>
-              <small>Needed from <span>{{neededfrom}}</span> until <span>neededto</span></small>  
-            <blockquote> 
-        </div>
-        <div class="span2 offset1">
-          <button class="btn"><i class="icon-ok"></i> Pledge</button>
-        </div>
-      </div>
-    {{/each}}
-    {{#each met_required_resource}}
-      <div id="resource_{{resource_id}}"class="row-fluid">
-        <div class="span9">
-            <blockquote>
-              <p><span class="resource_amount badge badge-info">{{amount}}</span> x <span class="resource_item">{{name}}</span><span class="pledger label label-success">{{pledger_name}} has your back</span></p>
-              <small>Needed from <span>{{neededfrom}}</span> until <span>neededto</span></small>  
-            <blockquote> 
-        </div>
-        <div class="span2 offset1">
-          <button class="btn disabled"><i class="icon-ok"></i> Pledge</button>
-        </div>
-      </div>
-    {{/each}}
-    {{#each met_extra_resource}}
-      <div id="resource_{{resource_id}}"class="row-fluid">
-        <div class="span9">
-            <blockquote>
-              <p><span class="resource_amount badge badge-info">{{amount}}</span> x <span class="resource_item">{{name}}</span><span class="pledger label label-success">{{pledger_name}} wants to help</span></p>  
-            <blockquote> 
-        </div>
-      </div>
-    {{/each}}
+    <div id="resources_holder">
+      <!-- Our resources will appear here-->
+    </div>
     <form class="form-inline">
       <div class="row-fluid">
         <div class="row-fluid">
