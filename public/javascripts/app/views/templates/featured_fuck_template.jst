@@ -1,19 +1,11 @@
-<div class="row-fluid">
-  <div class="span12">
-    <div class="row-fluid">
-      {{#each featured_fucks}}
-        <div class="featured-fuck thumbnail span4">
-          <img src="{{this.image_url}}" alt="">
-          <div class="caption">
-            <h3>{{this.title}}</h3>
-            <p>{{this.description_short}}</p>
-            <div class="btn-group fuck-controls">
-              <a href="{{this.url}}" class="btn">Read More</a>
-              <a href="{{this.unfuck_url}}" class="btn btn-primary">Unfuck it</a>
-            </div>
-          </div>
-        </div>
-      {{/each}}
+<div class="featured-fuck thumbnail span4">
+  <img src="{{image_url}}" alt="">
+  <div class="caption">
+    <h3>{{title}}</h3>
+    <p>{{description_short}}</p>
+    <div class="btn-group fuck-controls">
+      <a href="{{url}}" class="btn">Read More</a>
+      <a href="{{unfuck_url}}" class="btn btn-primary">Unfuck it</a>
     </div>
   </div>
 </div>

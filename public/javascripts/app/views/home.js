@@ -30,11 +30,17 @@
       return this;
     },
     addFuck: function(fuck) {
-      var item = new FuckListItem({model: fuck});
-      this.$("#fuck-list").append(item.render().el);
+      if ( $(".fuck-featured > div").size() <= 3){
+        var item = new FeaturedFuckItem({model: fuck});
+        $(".fuck-featured").append(item.render().el);
+      }else{
+        console.log("fuck-list");
+        var item = new FuckListItem({model: fuck});
+        this.$("#fuck-list").append(item.render().el); 
+      }
     },
     reset: function(){
-      Fucks.each(this.addFuck)
+      Fucks.each(this.addFuck);
     },
     follow: function(fuck){
       Backbone.history.navigate('fuck/'+fuck.id, {trigger: true});
