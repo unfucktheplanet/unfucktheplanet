@@ -12,6 +12,7 @@ javascripts:
     - public/javascripts/app/config/initializers/**/*.js
   application:
     - public/javascripts/app/namespacing.js
+    - public/javascripts/app/controllers/*.js
     - public/javascripts/app/views/**/*.js
     - public/javascripts/app/models/**/*.js
     - public/javascripts/app/routers.js
