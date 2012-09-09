@@ -2,7 +2,7 @@
   // ----------
 
   // Our basic **Todo** model has `content`, `order`, and `done` attributes.
-  window.Todo = Backbone.Model.extend({
+  window.Fuck = Backbone.Model.extend({
 
     // Default attributes for the todo.
     defaults: {
