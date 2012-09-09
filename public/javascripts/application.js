@@ -9,5 +9,5 @@ $(function(){
   new Unfucktheplanet.Router();
   Backbone.history.start();
   
-  window.App = new window.AppView;
+  Backbone.history.navigate('', {trigger:true});
 });

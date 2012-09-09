@@ -25,7 +25,7 @@
       Fucks.bind('reset', this.reset, this);
       Fucks.bind('all',   this.render, this);
       
-      Fucks.fetch();
+      Fucks.fetch();{}
     },
     render: function() {
     },

@@ -4,7 +4,7 @@ window.Unfucktheplanet.Router = Backbone.Router.extend({
     "fuck/:id": "fuck"
   }),
   index: function() {
-    return console.log("index");
+    window.App = new window.AppView;
   },
   fuck: function(id) {
     return console.log("fuck with id");
