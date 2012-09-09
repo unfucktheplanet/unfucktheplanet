@@ -7,6 +7,10 @@ gem 'rails', '3.0.9'
 
 gem 'pg'
 gem "jammit"
+gem 'cancan'
+# gem 'devise'
+
+gem 'inherited_resources'
 
 # Use unicorn as the web server
 # gem 'unicorn'

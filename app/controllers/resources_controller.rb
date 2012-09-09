@@ -1,0 +1,2 @@
+class ResourcesController < ApiController
+end
