@@ -1,0 +1,11 @@
+{
+	id: 1, /* ID of the Unfuck */
+	description: "", /* Full text description of this Unfuck */
+	involved: true, /* True if the user viewing this unfuck is a participant (creator of the unfuck, creator of the fuck or pledger) */
+	owned: false, /* True if the user viewing this unfuck is the owner of the original fuck */
+	creator: { /* Creator structure */
+		name: "Bruce Wayne", /* Name of the creator of this Unfuck */
+		profile_url: "http://www.google.com/?q=Bruce+Wayne", /* URL pointing to the profile of the creator */
+		profile_picture: "http://placekitten.com/50/50"	/* Profile picture of the creator of this unfuck */
+	}
+}
