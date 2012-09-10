@@ -1,10 +1,7 @@
-  // The DOM element for a fuck list item...
   window.FuckListItem = Backbone.View.extend({
 
-    //... is a list tag.
     tagName:  "li",
 
-    // The DOM events specific to an item.
     events: {
       "click"              : "onClick",
     },
@@ -29,4 +26,3 @@
       Backbone.history.navigate('fuck/' + this.model.id, {trigger: true});
     }
   });
-

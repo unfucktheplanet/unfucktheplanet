@@ -34,7 +34,6 @@
         var item = new FeaturedFuckItem({model: fuck});
         $(".fuck-featured").append(item.render().el);
       }else{
-        console.log("fuck-list");
         var item = new FuckListItem({model: fuck});
         this.$("#fuck-list").append(item.render().el); 
       }
