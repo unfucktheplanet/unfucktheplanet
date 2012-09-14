@@ -1,7 +1,0 @@
-<script>
-  var opener = window.opener;
-  if (typeof opener !== 'undefined') {
-    window.close();
-    opener.alert("<%= current_user.auth_uid %>");
-  }
-</script>

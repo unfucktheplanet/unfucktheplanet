@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Unfuck The Planet</title>
-  <%= include_stylesheets :application, :media => 'all' %>
-  <%= include_javascripts :core, :initializers, :helpers, :templates, :application %>
-  <%= csrf_meta_tag %>
-  </head>
+  <meta charset="utf-8">
+  <title>mnml</title>
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= csrf_meta_tags %>
+</head>
 <body>
-<%= yield %>
+  <%= yield %>
+  <%= javascript_include_tag "application" %>
+<%- if Rails.env.production? -%>
+  <!-- Load Google Analytics asynchronously -->
+<%- end -%>
 </body>
 </html>

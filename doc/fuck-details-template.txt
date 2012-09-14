@@ -1,6 +1,0 @@
-{
-	location: '', /* Name of the place where this fuck is happening */
-	image_url: "http://placekitten.com/400/400", /* URL pointing to the image associated to the fuck */
-	description_full: "", /* Full textual description of the Fuck*/
-	watching: true /* true if the user currently viewing this Fuck is watching it */
-}

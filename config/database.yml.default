@@ -1,21 +1,20 @@
-default: &defaults
+defaults: &defaults
   adapter: postgresql
   host: localhost
-  username: postgres
-  password: 
 
 development:
   <<: *defaults
-  database: unfuck-dev
+  database: mnml-dev
 
-test:
+test: &test
   <<: *defaults
-  database: unfuck-test
+  database: mnml-test
 
 cucumber:
-  <<: *defaults
-  database: unfuck-test
+  <<: *test
 
 production:
   <<: *defaults
-  database: unfuck-prod
+  database: mnml-prod
+  username: ---
+  password: ---
