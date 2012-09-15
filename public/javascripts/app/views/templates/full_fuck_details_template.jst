@@ -1,0 +1,54 @@
+    <div id="header" class="row-fluid">
+      <div id="logo_box" class="span5"></div>
+      <h1 id="location_name">{{location}}</h1>
+    </div>
+    <br />
+    <div id="fuck-description">
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="row-fluid">
+            <div class="fucked-image span4">
+              <img src="{{image_url}}" alt="">
+            </div>          
+            <div class="span7">
+              <h4>What is fucked and why?</h4>
+              <p>{{description_full}}</p>
+            </div>
+          </div>
+          <br />
+          <div class="row-fluid">
+            <div class="span10 offset2 btn-group">
+              <button class="span3 btn btn-primary"><i class="icon-exclamation-sign icon-white"></i> Unfuck this!</button>
+              <button class="span3 btn"><i class="icon-share-alt"></i>Tell the world!</button>
+              <button class="span3 btn {{#if watching}}active{{/if}}" type="button" data-toggle="button"><i class="icon-eye-open toggle-inactive"></i><i class="icon-eye-close toggle-active"></i> Watch</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div id="unfucks">
+      <!-- Unfucks list -->
+      <div class="row-fluid">
+        <div class="span7 offset2 well">
+          There doesn't seem to be any here. Have an idea of how to unfuck this?
+        </div>
+      </div>
+    </div>
+    <div class="modal hide fade" id="message-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Send Message</h3>
+      </div>
+      <div class="modal-body">
+        <p class="leading">You'll be talking to these contributors:</p>
+        <div id="name-list" class="well well-small">
+            <!-- Here we will see our list of people involved in this unfuck -->
+        </div>
+        <textarea class="message-textarea" rows="5" placeholder="And don't forget to tell them how cool they are"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        <button class="btn btn-primary">Send</button>
+      </div>
+    </div>
