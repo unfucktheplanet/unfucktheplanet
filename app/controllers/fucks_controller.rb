@@ -1,0 +1,2 @@
+class FucksController < ApiController
+end
