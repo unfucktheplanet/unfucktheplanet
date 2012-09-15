@@ -1,13 +1,13 @@
-class mnml.routers.App extends Backbone.Router
+class unfucktheplanet.routers.App extends Backbone.Router
   routes:
     "":       "index"
     "index":  "index"
     "about":  "about"
 
   index: ->
-    @indexView ||= new mnml.views.Index(el: $("#wrapper"))
+    @indexView ||= new unfucktheplanet.views.Index(el: $("#wrapper"))
     @indexView.render()
 
   about: ->
-    @aboutView ||= new mnml.views.About(el: $("#wrapper"))
+    @aboutView ||= new unfucktheplanet.views.About(el: $("#wrapper"))
     @aboutView.render()

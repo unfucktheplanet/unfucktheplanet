@@ -1,4 +1,4 @@
-class mnml.views.Index extends Backbone.View
+class unfucktheplanet.views.Index extends Backbone.View
   initialize: (options) ->
 
   template: HBS["templates/index"]

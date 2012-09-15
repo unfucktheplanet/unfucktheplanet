@@ -4,17 +4,17 @@ defaults: &defaults
 
 development:
   <<: *defaults
-  database: mnml-dev
+  database: unfucktheplanet-dev
 
 test: &test
   <<: *defaults
-  database: mnml-test
+  database: unfucktheplanet-test
 
 cucumber:
   <<: *test
 
 production:
   <<: *defaults
-  database: mnml-prod
+  database: unfucktheplanet-prod
   username: ---
   password: ---

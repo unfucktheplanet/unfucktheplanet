@@ -1,4 +1,4 @@
-Mnml::Application.routes.draw do
+Unfucktheplanet::Application.routes.draw do
 
   root to: 'home#index'
 

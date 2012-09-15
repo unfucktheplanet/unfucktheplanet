@@ -1,4 +1,4 @@
-window.mnml ||=
+window.unfucktheplanet ||=
   models:      {}
   collections: {}
   views:       {}

@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Mnml::Application.load_tasks
+Unfucktheplanet::Application.load_tasks

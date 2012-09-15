@@ -1,3 +1,3 @@
 $(document).ready ->
-  new mnml.routers.App()
+  new unfucktheplanet.routers.App()
   Backbone.history.start()
