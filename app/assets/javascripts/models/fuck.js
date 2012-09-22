@@ -1,4 +1,4 @@
-window.Unfucktheplanet.Models.Fuck = Backbone.Model.extend({
+window.unfucktheplanet.models.Fuck = Backbone.Model.extend({
   paramRoot: 'fuck',
   
   defaults: ({
@@ -9,7 +9,7 @@ window.Unfucktheplanet.Models.Fuck = Backbone.Model.extend({
   })
 });
 
-window.Unfucktheplanet.Collections.FucksCollection = Backbone.Collection.extend({
-  model: Unfucktheplanet.Models.Fuck,
+window.unfucktheplanet.collections.FucksCollection = Backbone.Collection.extend({
+  model: unfucktheplanet.models.Fuck,
   url: '/fucks'
 });

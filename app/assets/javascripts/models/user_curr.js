@@ -1,4 +1,4 @@
-window.Unfucktheplanet.Models.User = Backbone.Model.extend({
+window.unfucktheplanet.models.User = Backbone.Model.extend({
   paramRoot: 'user',
 
   defaults:({
@@ -12,8 +12,8 @@ window.Unfucktheplanet.Models.User = Backbone.Model.extend({
   })
 });
 
-window.Unfucktheplanet.Collections.UsersCollection = Backbone.Collection.extend({
-  model: Unfucktheplanet.Models.User,
+window.unfucktheplanet.collections.UsersCollection = Backbone.Collection.extend({
+  model: unfucktheplanet.models.User,
   url: '/users'
 });
   
