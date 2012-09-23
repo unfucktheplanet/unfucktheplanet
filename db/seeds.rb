@@ -13,9 +13,7 @@ users = User.create([{
   firstname: 'anne',
   lastname: 'kanne',
   gender: 'female',
-  email: 'anne@kanne.de',
-  auth_provider: 'facebook',
-  auth_uid: 123
+  email: 'anne@kanne.de'
 }])
 
 fucks = Fuck.create([{
@@ -24,8 +22,8 @@ fucks = Fuck.create([{
   description: 'The Playground Cnr Kollwitz & Wörther Straße is dirty'}])
 
 unfucks = Unfuck.create([{
-  description: 'Lets go there at 09/20/2012 and clean it. I need 4 People for one hour.', 
-  fuck: fucks.first,
-  user: users.first,
-  location: locations.first
+  description: 'Lets go there at 09/20/2012 and clean it. I need 4 People for one hour.' 
+  # fuck: fucks.first,
+  # user: users.first,
+  # location: locations.first
 }])
