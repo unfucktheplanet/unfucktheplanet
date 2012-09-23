@@ -5,8 +5,8 @@ class unfucktheplanet.routers.App extends Backbone.Router
     "about":  "about"
 
   index: ->
-    @indexView ||= new unfucktheplanet.views.Index(el: $("#wrapper"))
-    @indexView.render()
+    @home ||= new unfucktheplanet.views.HomeView(el: $("#wrapper"))
+    @home.render()
 
   about: ->
     @aboutView ||= new unfucktheplanet.views.About(el: $("#wrapper"))
