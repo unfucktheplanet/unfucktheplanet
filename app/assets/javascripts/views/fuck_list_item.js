@@ -2,6 +2,8 @@
 
     tagName:  "li",
 
+    template: HBS["templates/base_fuck_template"],
+
     events: {
       "click"              : "onClick",
     },
@@ -12,7 +14,7 @@
 
     // Re-render the contents of the fuck item.
     render: function() {
-      $(this.el).html(JST.base_fuck_template(this.model.toJSON()));
+      $(this.el).html(this.template(this.model.toJSON()));
       this.setContent();
       return this;
     },

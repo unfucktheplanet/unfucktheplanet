@@ -1,5 +1,5 @@
 
-  window.HomeView = Backbone.View.extend({
+  window.unfucktheplanet.views.HomeView = Backbone.View.extend({
 
     el: $("#unfucktheplanet"),
 
@@ -12,10 +12,7 @@
     // loading any preexisting todos that might be saved in *localStorage*.
     initialize: function() {
       
-      window.Fucks = new Unfucktheplanet.Collections.FucksCollection;
-
-      //DELETE: ? 
-      this.input    = this.$("#new-todo");
+      window.Fucks = new unfucktheplanet.collections.FucksCollection;
 
       // bind here: Fucks.bind('add',   this.addOne, this);
 
@@ -23,7 +20,7 @@
       Fucks.bind('reset', this.reset, this);
       Fucks.bind('all',   this.render, this);
       
-      Fucks.fetch();{}
+      Fucks.fetch();
     },
     render: function() {
       $(this.el).html(); //TODO: use template for home view.
