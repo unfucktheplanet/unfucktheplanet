@@ -28,10 +28,10 @@
     },
     addFuck: function(fuck) {
       if ( $(".fuck-featured > div").size() <= 3){
-        var item = new FeaturedFuckItem({model: fuck});
+        var item = new unfucktheplanet.views.FeaturedFuckItem({model: fuck});
         $(".fuck-featured").append(item.render().el);
       }else{
-        var item = new FuckListItem({model: fuck});
+        var item = new unfucktheplanet.views.FuckListItem({model: fuck});
         this.$("#fuck-list").append(item.render().el); 
       }
     },

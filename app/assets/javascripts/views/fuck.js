@@ -1,5 +1,5 @@
 //JUST A PLACEHOLDER COPY. TODO 
-  window.FuckView = Backbone.View.extend({
+  window.unfucktheplanet.views.FuckView = Backbone.View.extend({
 
     tagName:  "li",
 

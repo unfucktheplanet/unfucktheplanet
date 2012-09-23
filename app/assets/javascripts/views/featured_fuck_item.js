@@ -1,4 +1,4 @@
-  window.FeaturedFuckItem = Backbone.View.extend({
+  window.unfucktheplanet.views.FeaturedFuckItem = Backbone.View.extend({
 
     tagName:  "div",
 
