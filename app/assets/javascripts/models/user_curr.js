@@ -1,3 +1,4 @@
+//TODO: what is this?
 window.unfucktheplanet.models.User = Backbone.Model.extend({
   paramRoot: 'user',
 
