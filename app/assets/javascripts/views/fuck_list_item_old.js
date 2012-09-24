@@ -1,4 +1,4 @@
-  window.FuckListItem = Backbone.View.extend({
+  window.unfucktheplanet.views.FuckListItem = Backbone.View.extend({
 
     tagName:  "li",
 
